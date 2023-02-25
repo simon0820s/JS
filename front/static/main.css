@@ -46,6 +46,14 @@ body{
     display: flex;
     flex-direction: column;
 }
+.form a{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
 .label{
     font-size: var(--sm);
     font-weight: bold;
@@ -58,6 +66,9 @@ body{
     height: 32px;
     font-size: var(--md);
     margin-bottom:8px;
+}
+.input_email{
+    margin-bottom: 8px;
 }
 .email_image{
     width: 132px;
@@ -88,6 +99,18 @@ body{
     border-radius:8px;
     border: none;
     color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    height: 48px;
+    font-size: var(--lg);
+    font-weight: bold;
+
+}
+.secondary_button{
+    background-color: var(--white);
+    border-radius:8px;
+    border:1px solid var(--hospital-green);
+    color: var(--hospital-green);
     width: 100%;
     cursor: pointer;
     height: 48px;
