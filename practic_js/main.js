@@ -1,12 +1,20 @@
-const grafos=document.querySelector(".grafos");
+const base=document.getElementById("base");
+const expo=document.getElementById("exponent");
+const btn=document.getElementById("calculate");
+const result=document.getElementById("result");
 
-console.log(grafos);
+btn.addEventListener("click",calculate);
 
-grafos.innerText="jejeje";
-grafos.classList.remove("grafos")
-console.log(grafos);
+function calculate(){
+    const b=parseFloat(base.value);
+    const e=parseFloat(expo.value);
 
-const img=document.createElement('img');
-img.setAttribute('src',"https://cdn.pixabay.com/photo/2017/10/17/16/10/fantasy-2861107_1280.jpg");
-grafos.append(img);
-img.setAttribute("width","300px")
+    if (isNaN(b)||isNaN(e)){
+        result.innerHTML="Error!!";
+    }
+    else{
+        const res=Math.pow(b,e);
+        result.innerHTML=b+"ʌ"+e+" = "+res;
+    }
+}
+
