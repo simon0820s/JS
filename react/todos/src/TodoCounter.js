@@ -1,8 +1,9 @@
 import React from "react";
+import './TodoCounter.css';
 
 function TodoCounter(){
     return (
-        <h2>you did completed your todos</h2>
+        <h2 className="TodoCounter">you did completed your todos</h2>
     );
 }
 
